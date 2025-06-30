@@ -1,13 +1,38 @@
 # Real-Time-Network-Packet-Analyzer-and-Anomaly-Detection
 real-time network packet analyzer to capture, inspect, and classify network traffic using deep packet inspection techniques.
-# Real-Time Network Packet Analyzer and Anomaly Detection
+# 🛡️ Real-Time Network Packet Analyzer with Anomaly Detection (GUI-based)
 
 ## 📌 Overview
 
-This project is a real-time network packet analyzer with built-in anomaly detection capabilities. It captures and inspects network traffic, performs protocol analysis, and uses machine learning models to detect abnormal patterns that may indicate potential security threats such as DDoS attacks, port scans, or suspicious payloads.
+This project is a real-time network packet analyzer and anomaly detection system built with **Python**, **Tkinter**, and **Scapy**, and powered by a **pre-trained machine learning model** (e.g., deep learning using Keras). It provides a GUI for live packet capture, protocol analysis, and anomaly detection using a trained neural network model. A **feature scaler** and **feature vector template** ensure consistency between real-time data and the model's training data.
+
+---
 
 ## 🚀 Features
 
-- 🔍 Real-time packet capturing and decoding (TCP, UDP, ICMP, etc.)
-- 📊 Live network traffic statistics and visualization
-- 🧠 Anomaly detection using ML algorithms 
+- 📡 Real-time packet sniffing using **Scapy**
+- 🔍 Protocol analysis (TCP, UDP, ICMP, GRE, etc.)
+- 🧠 Anomaly detection using a pre-trained **Keras model**
+- 🧮 Feature normalization with `StandardScaler`
+- 📋 Live logging of packets and anomaly results in a **Tkinter-based GUI**
+- 📊 One-click start/stop for packet analysis
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Tkinter (Python GUI)
+- **Packet Capture:** Scapy
+- **Machine Learning:** TensorFlow / Keras
+- **Data Preprocessing:** Pandas, NumPy, Scikit-learn
+- **Other:** Threading, Queue for safe GUI updates
+
+---
+
+## 📦 Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/packet-analyzer-ai.git
+cd packet-analyzer-ai
